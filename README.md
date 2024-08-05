@@ -22,7 +22,7 @@ state what you will use to document your API, with an example sample request and
 
 
 ### *Assumption*
-Discount will be applied on below order and rules:
+Discount will be applied on below order and applying only discount at one time:
   - If the user is an employee of the store, he gets a 30% discount
   - If the user is an affiliate of the store, he gets a 10% discount
   - If the user has been a customer for over 2 years, he gets a 5% discount.
