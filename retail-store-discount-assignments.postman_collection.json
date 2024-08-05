@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "2e3b6864-be86-4ad2-9eb6-3a582b8c7ff0",
+		"name": "Assignments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "retail-store-discount-api",
+			"item": [
+				{
+					"name": "apply-discount",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerDetail\":{\n        \"phoneNumber\": \"313213131\"\n    },\n    \"itemDetails\":[\n        {\n        \"name\": \"apple\",\n        \"quantity\": 8,\n        \"itemType\": \"GROCERY\",\n        \"originalPrice\" : 950.00\n        },\n        {\n        \"name\": \"jeans\",\n        \"quantity\": 2,\n        \"itemType\": \"CLOTHES\",\n        \"originalPrice\" : 500\n        },\n        {\n        \"name\": \"shirt\",\n        \"quantity\": 2,\n        \"itemType\": \"CLOTHES\",\n        \"originalPrice\" : 400\n        },\n        {\n        \"name\": \"iphone11\",\n        \"quantity\": 1,\n        \"itemType\": \"MOBILE\",\n        \"originalPrice\" :600\n        }\n    ]\n    \n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8093/retail-store-discount/discount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8093",
+							"path": [
+								"retail-store-discount",
+								"discount"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
